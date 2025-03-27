@@ -7,23 +7,24 @@
 </head>
 <body>
     <header>
-        <div class="content-wrapper">
-            <h1>Alissa Lorberau</h1>
+        <div class="greeting">
+            <h1> Hello there, I am Alissa Lorberau!</h1>
+            <h2> I am a junior web developer with a passion for creating visually appealing and user-friendly.</h2>
         </div>
             <div>
                 <nav>
                     <ul>
-                        <li>About</li>
-                        <li>Skills</li>
-                        <li>Projects</li>
-                        <li>Contact</li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
     </header>
 
     <main>
-        <section>
+        <section id="about">
             <div>
                 <h2>A little about me.</h2>
                 <div class="about">
@@ -48,116 +49,118 @@
             </div>
         </section>
 
-        <section>
-            <div>
-                <h2>A little about my offerings.</h2>
-                <div class="skills">
-                    <h3>Offerings</h3>
-                    <p>HTML and CSS</p>
-                    <p>JavaScript</p>
-                    <p>React</p>
-                    <p>Responsive Web Design</p>
-                    <p>Git and Github</p>
-                </div>
+        <article class="portfolio">
+            <section id="skills">
                 <div>
-                    <h3>Toolbelt</h3>
-                    <p>Visual Studio Code</p>
-                    <p>Git and Github</p>
-                    <p>Chrome Dev Tools</p>
-                    <p>Media Queries</p>
-                    <p>Flexbox</p>
+                    <h2>A little about my offerings.</h2>
+                    <div class="skills">
+                        <h3>Offerings</h3>
+                        <p>HTML and CSS</p>
+                        <p>JavaScript</p>
+                        <p>React</p>
+                        <p>Responsive Web Design</p>
+                        <p>Git and Github</p>
+                    </div>
+                    <div>
+                        <h3>Toolbelt</h3>
+                        <p>Visual Studio Code</p>
+                        <p>Git and Github</p>
+                        <p>Chrome Dev Tools</p>
+                        <p>Media Queries</p>
+                        <p>Flexbox</p>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div>
-                <h2>Projects</h2>
+            </section>
+            <section id="projects">
                 <div>
-                    <div class="work">
-                        <figure><img src="img/Super Sticky Note.png"></figure>
-                        <h3>Super Sticky Notes</h3>
-                        <p>An interactive app that will let users create “sticky notes” on their computer to 
+                    <h2>Projects</h2>
+                    <div>
+                        <div class="work">
+                            <figure><img src="img/Super Sticky Note.png"></figure>
+                            <h3>Super Sticky Notes</h3>
+                            <p>An interactive app that will let users create “sticky notes” on their computer to 
                             keep track of to-do items. With the use of ES6, JSX. I was able to manage data 
                             flow and manipulate the DOM through the use of CodeSandbox.
                             </p>
-                        <p>ES6, JSX, Managing data flow, Manipulate the DOM</p>
-                        <p>CodeSandbox</p>
-                        <p><a href="https://codesandbox.io/p/sandbox/l12-build-your-big-component-help-forked-633pdq?file=%2Fsrc%2FApp.js" target="_blank"></a>Visit our Live Link</p>
-                    </div>
-                    <div>
-                        <figure><img src="img/Hotel Booking App.png"></figure>
-                        <h3>Hotel Booking App</h3>
-                        <p>A hotel search tool that allows you to filter the type of hotel you want to stay in. 
+                            <p>ES6, JSX, Managing data flow, Manipulate the DOM</p>
+                            <p>CodeSandbox</p>
+                            <p><a href="https://codesandbox.io/p/sandbox/l12-build-your-big-component-help-forked-633pdq?file=%2Fsrc%2FApp.js" target="_blank"></a>Visit our Live Link</p>
+                        </div>
+                        <div>
+                            <figure><img src="img/Hotel Booking App.png"></figure>
+                            <h3>Hotel Booking App</h3>
+                            <p>A hotel search tool that allows you to filter the type of hotel you want to stay in. 
                             Using the filter you can search by: Free Cancellation, Pets Allowed, or, Bestsellers. 
                             By using this search tool you can find the hotel that fits your travel style. 
-                        </p>
-                        <p>ES6, JSX, Managing Data Flow, Manipulate the DOM</p>
-                        <p>CodeSandbox</p>
-                        <p><a href="https://codesandbox.io/p/devbox/l7-stateful-hotel-filters-forked-88r9js?file=%2Fsrc%2FFilters%2Findex.js%3A18%2C7&workspaceId=ws_P95XrLLe8FDkQxbmoa2tnf" target="_blank"></a> Visit our Live Link</p>
-                    </div>
-                    <div>
-                        <figure><img src="img/Github Repo Gallery.png"></figure>
-                        <h3>Github Repo Gallery</h3>
-                        <p>This project pulls data from your GitHub portfolio to create a gallery of repos. 
+                            </p>
+                            <p>ES6, JSX, Managing Data Flow, Manipulate the DOM</p>
+                            <p>CodeSandbox</p>
+                            <p><a href="https://codesandbox.io/p/devbox/l7-stateful-hotel-filters-forked-88r9js?file=%2Fsrc%2FFilters%2Findex.js%3A18%2C7&workspaceId=ws_P95XrLLe8FDkQxbmoa2tnf" target="_blank"></a> Visit our Live Link</p>
+                        </div>
+                        <div>
+                            <figure><img src="img/Github Repo Gallery.png"></figure>
+                            <h3>Github Repo Gallery</h3>
+                            <p>This project pulls data from your GitHub portfolio to create a gallery of repos. 
                             Visitors to this site can click on my repos to see more details. 
                             I used the CSS and HTML languages for this build. I also used Github to polish this website.
-                        </p>
-                        <p>APIs, Manipulate the DOM, CSS3, HTML5, JavaScript</p>
-                        <p>Github</p>
-                        <p><a href="file:///Users/alissagarcia/Documents/github-repo-gallery-main/index.html" target="_blank"></a> Visit our Live Link</p>
-                    </div>
-                    <div>
-                        <figure><img src="img/Rogue Pickings.png"></figure>
-                        <h3>Rogue Pickings</h3>
-                        <p>A previous project transformed from static to responsive so it looks great at any device size. 
+                            </p>
+                            <p>APIs, Manipulate the DOM, CSS3, HTML5, JavaScript</p>
+                            <p>Github</p>
+                            <p><a href="file:///Users/alissagarcia/Documents/github-repo-gallery-main/index.html" target="_blank"></a> Visit our Live Link</p>
+                        </div>
+                        <div>
+                            <figure><img src="img/Rogue Pickings.png"></figure>
+                            <h3>Rogue Pickings</h3>
+                            <p>A previous project transformed from static to responsive so it looks great at any device size. 
                             Languages used to create and transform the sites are CSS3, HTML5 and responsive typography. 
                             Tools used were Chrome DevTools, Visual Studio Code and Github.</p>
-                        <p>CSS3, Flexbox, HTML5, Media Queries, Responsive Typography</p>
-                        <p>Chrome DevTools, Text Editors, Git, Github, Visual Code Studio</p>
-                        <p><a href="file:///Users/alissagarcia/Documents/Rogue-Responsive-main/index.html" target="_blank"></a> Visit our Live Link</p>
-                    </div>
-                    <div>
-                        <figure><img src="img/Unplugged.png"></figure>
-                        <h3>Unplugged</h3>
-                        <p>A 3-page responsive website from a design comp that adapts to mobile, tablet, and desktop screens. 
+                            <p>CSS3, Flexbox, HTML5, Media Queries, Responsive Typography</p>
+                            <p>Chrome DevTools, Text Editors, Git, Github, Visual Code Studio</p>
+                            <p><a href="file:///Users/alissagarcia/Documents/Rogue-Responsive-main/index.html" target="_blank"></a> Visit our Live Link</p>
+                        </div>
+                        <div>
+                            <figure><img src="img/Unplugged.png"></figure>
+                            <h3>Unplugged</h3>
+                            <p>A 3-page responsive website from a design comp that adapts to mobile, tablet, and desktop screens. 
                             Languages that were used to build the project were HTML5, CSS3, Flexbox and Responsive Typography. 
                             I also used the Chrome DevTools,  Visual Studio Code, and Github.
-                        </p>
-                        <p>CSS3, Flexbox, HTML5, Media Queries, Responsive Typography</p>
-                        <p>Chrome DevTools, Text Editors, Git, Github, Visual Code Studio</p>
-                        <p><a href="file:///Users/alissagarcia/Documents/Broilerplate-main/index.html" target="_blank"></a>Visit our Live Link</p>
+                            </p>
+                            <p>CSS3, Flexbox, HTML5, Media Queries, Responsive Typography</p>
+                            <p>Chrome DevTools, Text Editors, Git, Github, Visual Code Studio</p>
+                            <p><a href="file:///Users/alissagarcia/Documents/Broilerplate-main/index.html" target="_blank"></a>Visit our Live Link</p>
+                        </div>
+                    </div>
+                <div>
+            </section>
+        </article>
+    </main>
+        <footer id="contact">
+            <div>
+                <h2>Lets Chat</h2>
+                <div class="contact">
+                    <div>
+                        <h3>Message Me</h3>
+                        <p>361-587-8917</p>
+                        <p>alissagarcia10118@gmail.com</p>
+                    </div>
+            
+            
+                    <div>
+                        <h3>Follow Me</h3>
+                        <p><a href="https://github.com/Alissa-MG" target="_blank">
+                        <img src="img/Github Icon.png"></a></p>
+                        <p><a href="https://www.linkedin.com/in/alissa-garcia-058031340/">
+                        <img src="img/LinkedIn Icon.png"></a></p>
+                    </div>
+            
+            
+                    <div>
+                        <h3>Meet Me</h3>
+                        <p>Corpus Christi, TX</p>
+                        <p>Let's talk over coffee.</p>
                     </div>
                 </div>
-            <div>
-        </section>
-    </main>
-    <footer>
-        <div>
-            <h2>Lets Chat</h2>
-            <div class="contact">
-                <div>
-                    <h3>Message Me</h3>
-                    <p>361-587-8917</p>
-                    <p>alissagarcia10118@gmail.com</p>
-                </div>
-            
-            
-                <div>
-                    <h3>Follow Me</h3>
-                    <p><a href="https://github.com/Alissa-MG" target="_blank">
-                        <img src="img/Github Icon.png"></a></p>
-                    <p><a href="https://www.linkedin.com/in/alissa-garcia-058031340/">
-                        <img src="img/LinkedIn Icon.png"></a></p>
-                </div>
-            
-            
-                <div>
-                    <h3>Meet Me</h3>
-                    <p>Corpus Christi, TX</p>
-                    <p>Let's talk over coffee.</p>
-                </div>
             </div>
-        </div>
-    </footer>
-</body>
-</html>
+        </footer>
+    </body>
+    </html>
