@@ -8,9 +8,21 @@ body {
     color: #e2e3ed;
 }
 
-
 header {
-    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4d6a4b;
+    padding: 15px 20px;
+    color: white;
+    height: auto;
+    flex-wrap: wrap;
+  }
+  
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 nav {
@@ -22,6 +34,15 @@ nav {
     background-color: #527158;
     color: #e2e3ed;
 }
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+
 
 nav ul {
     list-style: none;
@@ -143,11 +164,50 @@ section div p a {
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 2.5em;
-    background-color: #202322
+    background-color: #202322;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .grouped-projects h3 {
     font-size: 1.4em;
+}
+
+.grouped-projects a {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+}
+  
+.grouped-projects button {
+    padding: 10px 16px;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button {
+    display: block;
+    padding: 10px 16px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ddd;
+}
+
+.grouped-projects p {
+    margin-bottom: 10px;
 }
 
 .skills p {
@@ -190,10 +250,53 @@ section div p a {
     justify-content: center;
     gap: 40px;
     margin-top: 8px;
-  }
+}
   
-  .social-icons img {
+.social-icons img {
     width: 45px;
     height: auto;
+}
+
+/*--------------Mobile---------------*/
+@media (max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #4d6a4b;
+        padding: 10px 20px;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* Add space between links */
+    }
+      
+    nav li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+
+/*-------------Desktop------------*/
+@media (min-width: 768px) {
+    header {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    nav {
+      flex-direction: row;
+    }
   }
 
