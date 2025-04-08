@@ -1,13 +1,51 @@
+/* ------RESET & BASE STYLES------- */
 html, body {
     font-size: 16px;
     height: 100%;
     margin: 0;
 }
 
+img {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+/*---------Typography----------*/
 body {
     color: #e2e3ed;
 }
 
+h1, h2, h3, h4 {
+    font-weight: 500;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    line-height: 43px;
+    font-family: 'Outfit', sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: 'Funnel Display', sans-serif;
+}
+
+h3, h4 {
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+p {
+    font-family: Open Sans, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*---------Layout----------*/
 header {
     display: flex;
     justify-content: space-between;
@@ -17,18 +55,52 @@ header {
     color: white;
     height: auto;
     flex-wrap: wrap;
-  }
-  
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    letter-spacing: 1px;
 }
 
+article {
+    background-color: #2a423a;
+    padding: 20px;
+}
+
+footer {
+    background: #202322;
+}
+
+#about {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about {
+    color: darkolivegreen;
+}
+
+#about p {
+    font-size: .9em;
+    margin: 30px;
+}
+
+#projects p {
+    text-align: center;
+}
+
+.skills li, 
+.tools li {
+    font-family: Quicksand, sans-serif;
+}
+
+.skills ul, 
+.tools ul {
+    padding: 0;
+    font-size: 1.4em;
+}
+
+/*--------Components-------*/
 nav {
     padding: 10px;
-    font-size: 1em;
-    display: block; 
+    font-size: 1em; 
     font-family: Quicksand, sans-serif;
     font-weight: bold;
     background-color: #527158;
@@ -42,8 +114,6 @@ nav a {
     font-weight: 600;
 }
 
-
-
 nav ul {
     list-style: none;
     padding: 0;
@@ -52,84 +122,30 @@ nav ul {
     justify-content: space-around;
 }
 
-h1 {
-    font-size: 3em;
-    font-weight: 500;
-    line-height: 43px;
-    font-family: Outfit, sans-serif;
+
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
-h2 {
-    font-size: 30px;
-    font-weight: 500;
-    font-family: Funnel Display, sans-serif;
-}
-
-h3, h4 {
-    font-size: 18px;
-    font-weight: 500;
-    font-family: Quicksand, sans-serif;
-}
-
-h1, h2, h3 {
-    text-align: center;
-}
-
-div {
+.button {
     display: block;
-}
-
-p {
-    font-family: Open Sans, sans-serif;
-}
-
-a {
-    color: inherit;
+    padding: 10px 16px;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
     text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    margin: 15px auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-#about {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-}
-
-#about h2 {
-    color: darkolivegreen;
-}
-
-#about p {
-    font-size: .9em;
-    margin: 30px;
-    color: darkolivegreen;
-}
-
-article {
-    background-color: #2a423a;
-    padding: 20px;
-}
-
-footer {
-    background: #202322;
-}
-
-header div h1 {
-    padding-bottom: 30px; 
-}
-
-header div h2 {
-    padding-bottom: 30px;
-}
-
-img {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 100%;
-}
-
-section div p a {
-    padding: 40px 40px;
+.button:hover {
+    background-color: #ddd;
 }
 
 .me {
@@ -151,14 +167,8 @@ section div p a {
     text-align: center;
 }
 
-#projects p {
-    text-align: center;
-}
-
-
-
 .grouped-projects {
-    margin-bottom: 50px ;
+    margin-bottom: 50px;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -178,58 +188,9 @@ section div p a {
     margin-top: 15px;
     text-align: center;
 }
-  
-.grouped-projects button {
-    padding: 10px 16px;
-    font-size: 1rem;
-    background-color: white;
-    color: black;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.button {
-    display: block;
-    padding: 10px 16px;
-    background-color: white;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
-    margin-top: 15px;
-    transition: background-color 0.3s ease;
-}
-
-.button:hover {
-    background-color: #ddd;
-}
 
 .grouped-projects p {
     margin-bottom: 10px;
-}
-
-.skills p {
-    list-style-type: circle;
-}
-
-.skills li {
-    font-family: Quicksand, sans-serif;
-}
-
-.skills ul {
-    padding: 0;
-    font-size: 1.4em;
-}
-
-.tools li {
-    font-family: Quicksand, sans-serif;
-}
-
-.tools ul {
-    padding: 0;
-    font-size: 1.4em;
 }
 
 .contact {
@@ -257,8 +218,18 @@ section div p a {
     height: auto;
 }
 
+.social-icons a {
+    display: inline-block;
+}
+
+/*----------Utilites----------*/
+
+.large-padding {
+    padding: 20px;
+}
+
 /*--------------Mobile---------------*/
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     header {
         display: flex;
         flex-direction: column;
@@ -288,15 +259,32 @@ section div p a {
     }
 }
 
-/*-------------Desktop------------*/
+/*-------------Tablet------------*/
 @media (min-width: 768px) {
     header {
-      flex-direction: row;
-      justify-content: space-between;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
   
     nav {
-      flex-direction: row;
+        display: flex;  
+        flex-direction: row;
+        gap: 30px;
     }
-  }
+
+    nav ul {
+        flex-direction: row;
+        margin: 0;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+}
+
+/*-----------Desktop------------*/
+@media (min-width: 1024px) {
+
+}
 
