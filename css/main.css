@@ -6,8 +6,6 @@ html, body {
 }
 
 img {
-    padding-top: 20px;
-    padding-bottom: 20px;
     width: 100%;
 }
 /*---------Typography----------*/
@@ -51,7 +49,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #4d6a4b;
-    padding: 15px 20px;
+    padding: 0 20px;
     color: white;
     height: auto;
     flex-wrap: wrap;
@@ -103,7 +101,6 @@ nav {
     font-size: 1em; 
     font-family: Quicksand, sans-serif;
     font-weight: bold;
-    background-color: #527158;
     color: #e2e3ed;
 }
 
@@ -125,6 +122,7 @@ nav {
     font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 1px;
+    font-family: Quicksand, sans-serif;
 }
 
 .button {
@@ -178,6 +176,7 @@ nav {
 
 .grouped-projects h3 {
     font-size: 1.4em;
+    margin: 10px;
 }
 
 .grouped-projects a {
@@ -233,7 +232,7 @@ nav {
         justify-content: space-between;
         align-items: center;
         background-color: #4d6a4b;
-        padding: 10px 20px;
+        padding: 0 20px;
         flex-wrap: wrap;
     }
 
@@ -262,7 +261,7 @@ nav {
 }
 
 /*-------------Tablet------------*/
-@media (min-width: 768px) {
+@media (max-width: 1024px) {
     header {
         flex-direction: row;
         justify-content: space-between;
@@ -286,7 +285,7 @@ nav {
 }
 
 /*-----------Desktop------------*/
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
 
 }
 
