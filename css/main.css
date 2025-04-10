@@ -46,7 +46,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #4d6a4b;
-    padding: 0 20px;
+    padding: 0;
     color: white;
     /*height: auto;*/
     flex-wrap: wrap;
@@ -61,7 +61,7 @@ footer {
     background: #202322;
 }
 
-#about {
+/*#about {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -72,6 +72,29 @@ footer {
 #about p {
     font-size: .9em;
     margin: 30px;
+}*/
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px 55px 20px;
+    background-color: #1e1f1d;
+    color: #e2e3ed;
+}
+
+#about h2 {
+    margin: 20px;
+}
+  
+.about-text {
+    background-color: #2e2f2d;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 800px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
 }
 
 .project-wrapper h2 {
@@ -80,6 +103,17 @@ footer {
 
 #projects p, .grouped-projects a {
     text-align: center;
+}
+
+.project {
+    flex: 1 1 300px;               /* Responsive card sizing */
+    background-color: #202322;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 1em;
+    border: 5px solid #333;       /* optional subtle border */
+    margin: 10px;
+    max-width: 350px;
 }
 
 #contact h2 {
@@ -128,6 +162,7 @@ nav {
     font-weight: bold;
     letter-spacing: 1px;
     font-family: Quicksand, sans-serif;
+    padding: 10px;
 }
 
 .button {
@@ -176,6 +211,7 @@ nav {
     border-radius: 2.5em;
     background-color: #202322;
     gap: 15px;
+    justify-content: space-evenly;
 }
 
 .grouped-projects h3 {
@@ -294,7 +330,7 @@ nav {
     }
 
     .grouped-projects {
-        flex-direction: column;
+        /*flex-direction: column;*/
         align-items: center;
     }
 
@@ -349,8 +385,8 @@ nav {
 
     .grouped-projects {
         /*display: flex;
-        flex-wrap: wrap;*/
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: space-between;*/
         gap: 20px; 
     }
 
@@ -374,7 +410,6 @@ nav {
     
     #about h2 {
         font-size: 45px;
-        margin-bottom: 10px;
     }
 
     #about p {
@@ -384,4 +419,43 @@ nav {
         padding: 30px;
         margin: 10px;
     }
+
+    #skills h2 {
+        margin: 0;
+        padding: 10px;
+        font-size: 35px;
+    }
+
+    .skills-tools-wrapper {
+        display: flex;
+        justify-content: space-around;
+        gap: 40px;
+        padding-left: 20px;
+    }
+
+    .skills-tools-wrapper h3 {
+        font-size: 23px;
+    }
+
+    .skills-tools-wrapper li {
+        font-size: 20px;
+    }
+
+    #contact h2 {
+        padding: 20px;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px; 
+        padding: 0 0 16px 22px;
+    }
+
+    .contact div {
+        flex: 1;
+        text-align: center;
+    }
+
 }
