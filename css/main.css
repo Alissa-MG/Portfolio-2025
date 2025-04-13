@@ -67,18 +67,6 @@ footer {
     color: #F0EAD2;
 }
 
-/*#about {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    color: #6c584c;
-}
-
-#about p {
-    font-size: .9em;
-    margin: 30px;
-}*/
 
 #about {
     display: flex;
@@ -112,12 +100,12 @@ footer {
 }
 
 .project {
-    flex: 1 1 300px;               /* Responsive card sizing */
+    flex: 1 1 300px;              
     background-color: #F0EAD2;
     padding: 10px;
     box-sizing: border-box;
     border-radius: 1em;
-    border: 5px solid #a98467;       /* optional subtle border */
+    border: 5px solid #a98467;       
     margin: 10px;
     max-width: 350px;
 }
@@ -227,11 +215,6 @@ nav {
     color: #6C584C;
 }
 
-/*.grouped-projects a {
-    display: block;
-    margin-top: 15px;
-    text-align: center;
-}*/
 
 .grouped-projects p {
     margin-bottom: 10px;
@@ -272,20 +255,11 @@ nav {
 /*--------------Mobile---------------*/
 @media (max-width: 600px) {
     .nav-links ul {
-        /*display: flex;
-        flex-direction: row;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        align-items: center;*/
         gap: 10px;
     }
       
     .nav-links a {
         font-size: 0.9rem;
-        /*color: white;
-        text-decoration: none;
-        font-weight: bold;*/
     }
       
     .logo {
@@ -303,18 +277,6 @@ nav {
 
 /*-------------Tablet------------*/
 @media (min-width: 601px) and (max-width: 1024px) {
-    /*header {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-  
-    nav {
-        display: flex;  
-        flex-direction: row;
-        gap: 30px;
-    }*/
-
     nav ul {
         flex-direction: row;
         margin: 0;
@@ -338,7 +300,6 @@ nav {
     }
 
     .grouped-projects {
-        /*flex-direction: column;*/
         align-items: center;
     }
 
@@ -392,14 +353,11 @@ nav {
     }
 
     .grouped-projects {
-        /*display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;*/
         gap: 20px; 
     }
 
     .project {
-        flex: 1 1 calc(33.333% - 20px); /* Adjust for spacing/gap */
+        flex: 1 1 calc(33.333% - 20px); 
         background-color: #202322;
         padding: 20px;
         box-sizing: border-box;
