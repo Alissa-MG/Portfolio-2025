@@ -8,6 +8,10 @@ html, body {
     color: #6C584C;
 }
 
+html {
+    scroll-behavior: smooth;  
+}
+
 img {
     width: 100%;
 }
@@ -99,8 +103,7 @@ footer {
     text-align: center;
 }
 
-.project {
-    flex: 1 1 300px;              
+.project {             
     background-color: #F0EAD2;
     padding: 10px;
     box-sizing: border-box;
@@ -109,6 +112,7 @@ footer {
     margin: 10px;
     max-width: 350px;
 }
+
 
 #contact h2 {
     padding: 0;
@@ -123,7 +127,6 @@ footer {
 
 .skills ul, 
 .tools ul {
-    padding: 0;
     font-size: 1.4em;
 }
 
@@ -166,7 +169,6 @@ nav {
     font-size: 1rem;
     background-color: #adc178;
     color: white;
-    /*text-decoration: none;*/
     font-weight: bold;
     border-radius: 6px;
     margin: 15px auto;
@@ -358,7 +360,7 @@ nav {
 
     .project {
         flex: 1 1 calc(33.333% - 20px); 
-        background-color: #202322;
+        background-color: #F0EAD2;
         padding: 20px;
         box-sizing: border-box;
         border-radius: 1em;
