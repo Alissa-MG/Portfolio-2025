@@ -34,7 +34,7 @@ h1 {
     font-size: 3em;
     line-height: 43px;
     font-family: 'Outfit', sans-serif;
-    color: #adc178;
+    color: #5c6841;
 }
 
 h2 {
@@ -46,7 +46,7 @@ h2 {
 h3, h4 {
     font-size: 18px;
     font-family: 'Quicksand', sans-serif;
-    color: #adc178;
+    color: #5c6841;
 }
 
 /*---------Layout----------*/
@@ -166,7 +166,7 @@ nav {
     display: block;
     padding: 10px 16px;
     font-size: 1rem;
-    background-color: #adc178;
+    background-color: #5c6841;
     color: white;
     font-weight: bold;
     border-radius: 6px;
