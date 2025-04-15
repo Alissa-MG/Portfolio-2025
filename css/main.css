@@ -99,8 +99,12 @@ footer {
     margin-top: 3px;
 }
 
-#projects p, .grouped-projects a {
+.grouped-projects a {
     text-align: center;
+}
+
+.project p {
+    text-align: left;
 }
 
 .project {             
