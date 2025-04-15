@@ -231,9 +231,20 @@ nav {
 
 .contact h3 {
     font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.follow h3 {
+    margin-bottom: 20px;
 }
 
 .contact p {
+    display: flex;
+    justify-content: center;
+}
+
+.message a {
+    padding: 10px;
     display: flex;
     justify-content: center;
 }
@@ -286,7 +297,7 @@ nav {
 }
 
 /*-------------Tablet------------*/
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 601px) and (max-width: 768px) {
     nav ul {
         flex-direction: row;
         margin: 0;
@@ -313,6 +324,10 @@ nav {
         align-items: center;
     }
 
+    .project {
+        max-width: 350px;
+    }
+
     .skills-tools-wrapper {
         display: flex;
         justify-content: space-between;
@@ -324,12 +339,15 @@ nav {
         flex: 1;
     }
 
+    .skills h3, .tools h3 {
+        font-size: 28px;
+    }
+
     .contact {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         gap: 20px; 
-        padding: 0 0 16px 22px;
     }
 
     .contact div {
@@ -340,7 +358,7 @@ nav {
 }
 
 /*-----------Desktop------------*/
-@media (min-width: 1025px) {
+@media (min-width: 769px) and (max-width: 1239px){
 
     .logo {
         font-size: 40px;
@@ -372,6 +390,7 @@ nav {
         padding: 20px;
         box-sizing: border-box;
         border-radius: 1em;
+        max-width: 250px;
     }
 
     .grouped-projects h3 {
@@ -434,4 +453,19 @@ nav {
         text-align: center;
     }
 
+}
+
+@media (min-width: 1240px) and (max-width: 1440px) {
+    .project {
+        max-width: 350px;
+    }
+
+    .skills h3, .tools h3 {
+        font-size: 28px;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
