@@ -127,6 +127,10 @@ footer {
     font-size: 1.4em;
 }
 
+.skills h3, .tools h3 {
+    color: #2B371A;
+}
+
 #contact h2 {
     padding: 0;
     margin: 0;
@@ -139,7 +143,6 @@ nav {
     font-size: 1em; 
     font-family: Quicksand, sans-serif;
     font-weight: bold;
-    color: #6C584C;
     display: flex;
     gap: 30px;
 }
@@ -153,9 +156,9 @@ nav {
 }
 
 .nav-links a {
-    color: #6C584C;
     font-weight: 600;
     font-size: 1em;
+    color: #2F2623;
 }
 
 .logo {
@@ -200,6 +203,7 @@ nav {
     background-color: #dde5b6;
     padding: 40px;
     text-align: center;
+    width: 100%;
 }
 
 .grouped-projects {
@@ -223,6 +227,11 @@ nav {
 
 .grouped-projects p {
     margin-bottom: 10px;
+}
+
+.skills-tools-wrapper {
+    display: flex;
+    justify-content: space-around;
 }
 
 .contact {
@@ -456,6 +465,26 @@ nav {
 }
 
 @media (min-width: 1240px) and (max-width: 1440px) {
+    .project {
+        max-width: 350px;
+    }
+
+    .skills h3, .tools h3 {
+        font-size: 28px;
+    }
+
+    .skills-tools-wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 1441px) {
     .project {
         max-width: 350px;
     }
