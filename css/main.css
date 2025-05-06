@@ -71,6 +71,14 @@ footer {
     color: #F0EAD2;
 }
 
+.foot-note {
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
 
 #about {
     display: flex;
@@ -454,7 +462,6 @@ nav {
         justify-content: space-between;
         align-items: flex-start;
         gap: 20px; 
-        padding: 0 0 16px 22px;
     }
 
     .contact div {
